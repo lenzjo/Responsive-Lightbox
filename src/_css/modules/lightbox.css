@@ -1,0 +1,73 @@
+.lightbox {
+  &__modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 30;
+  }
+  &__title {
+    font-size: 4rem;
+    color: #ffa;
+  }
+}
+.left-overlap {
+  width: 200px;
+  height: auto;
+  float: left;
+  margin-right: 1rem;
+  shape-outside: border-box;
+  shape-margin: 10px;
+  @mixin atSmall {
+    width: 225px;
+  }
+  @mixin atMedium {
+    width: 250px;
+    margin-left: -120px;
+  }
+  @mixin atLarge {
+    width: 400px;
+    margin-left: -200px;
+  }
+  &--round {
+    border-radius: 50%;
+  }
+}
+
+.right-overlap {
+  width: 200px;
+  height: auto;
+  float: right;
+  margin-right: 1rem;
+  shape-outside: border-box;
+  shape-margin: 10px;
+  @mixin atSmall {
+    width: 225px;
+  }
+  @mixin atMedium {
+    width: 250px;
+    margin-right: -125px;
+  }
+  @mixin atLarge {
+    width: 400px;
+    margin-right: -200px;
+  }
+  &--round {
+    border-radius: 50%;
+  }
+}
+
+.tlclb,
+.tlclbp {
+  border: 2px solid transparent;
+  &:hover {
+    cursor: pointer;
+    border: 2px solid $HiliteRed;
+  }
+}

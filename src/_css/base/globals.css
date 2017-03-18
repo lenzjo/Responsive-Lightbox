@@ -1,0 +1,97 @@
+/*
+ * GLOBAL STUFF
+ */
+
+ * {
+   box-sizing: border-box;
+ }
+
+ img {
+   width: 100%;
+   height: auto;
+   margin: 0;
+   padding: 0;
+ }
+
+ html, body {
+   font-size: 100%;
+ }
+
+/* Sticky footer*/
+ html {
+   position: relative;
+   min-height: 100%;
+ }
+
+ body {
+   background-color: $BGcolor;
+   color: $FGcolor;
+   font-family: $bodyFont;
+   font-weight: 300;
+   line-height: 1.65;
+   margin: 0;
+   padding: 0;
+   @mixin atSmall {
+     background-color: #fee;
+   }
+   @mixin atMedium {
+     background-color: #efe;
+   }
+   @mixin atLarge {
+     background-color: #eef;
+   }
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+   font-family: $headerFont;
+   font-weight: 500;
+   margin-bottom: 0;
+   line-height: 1.2;
+   color: $HiliteRed;
+   a {
+     color: $HiliteRed;
+   }
+ }
+
+.wrapper {
+  width: 100%;
+  max-width: $pageWidth;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: $contentWidth;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.page-content {
+  border-top: 1px solid rgba(#eee, .4);
+}
+
+
+p {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p a {
+  font-weight: bolder;
+  color: $HiliteRed;
+  padding: 0 2px;
+  &:hover {
+    background-color: #ffa;
+  }
+}
+
+h2 {
+  font-size: 1.4rem;
+
+}
